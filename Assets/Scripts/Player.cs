@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f; // Adjust the speed as needed.
+    public PlayerDataSO playerData; // Reference to the ScriptableObject.
+
+    public PlayerAbility[] playerAbilities; // Reference to the ScriptableObjects.
 
     private Rigidbody rb;
     private Vector3 movementInput;
@@ -12,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>(); // Get the Rigidbody component.
+        playerAbilities = playerData.playerAbilities; // Get the array of PlayerAbility ScriptableObjects.
     }
 
     private void Update()

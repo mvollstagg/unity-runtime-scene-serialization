@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Samples/Unity Runtime Scene Serialization/1.0.0-exp.3/Basic Asset
+      Bundles/BasicAssetBundles.unity
+    guid: 650ebca3eae99434bb7923a0b1556916
   m_configObjects: {}
